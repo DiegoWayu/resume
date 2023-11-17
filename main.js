@@ -11,8 +11,8 @@ function init (event){
 function loadData(url){
     let json
     fetch(url)
-        .then(Response => json = Response.json())
-        .then(data => pintaMisHobbies)
+        .then(Response => Response.json())
+        .then(data => pintaMisHobbies(data))
 }
 function pintaMisHobbies (json){
     console.log(json)
