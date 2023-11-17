@@ -12,8 +12,8 @@ function loadData(url){
     let json
     fetch(url)
         .then(Response => json = Response.json())
-        .then(data => {
-            json = data
-            console.log(json)
-        })
+        .then(data => pintaMisHobbies)
+}
+function pintaMisHobbies (json){
+    console.log(json)
 }
